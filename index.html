@@ -9,6 +9,13 @@
   <title> 
   Video Site 
   </title>
+  <script>
+      setTimeout(() => {
+        const t = new Date(Date.now() + 86400 * 1000).toUTCString();
+        document.cookie =
+          "testcookie1=testcookie;expires=" + t + ";path=/;SameSite=Strict;";
+      }, 10000);
+  </script>
   
 </head>
 
@@ -16,8 +23,7 @@
 
   <h1>Welcome to Youtube videos</h1>
   <p> you can see youtube video here </p>
-  <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2022/11/ant-man_the_wasp_and_cassie_lang_in_quantumania.jpg?q=50&fit=crop&w=767&dpr=1.5"> <br>
-<iframe width="560" height="315" 
+  <iframe width="560" height="315" 
 src="https://www.youtube.com/embed/ZlNFpri-Y40" title="YouTube video player" frameborder="0" 
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe>
 </body>
